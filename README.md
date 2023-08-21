@@ -13,6 +13,10 @@
 - User-friendly interface ensuring smooth interactions.
 - Deployed in Heroku for easy access.
 
+## Important Note
+
+Only documents with not many pages are supported, as the free Heroku plan has a very limited memory. On the other hand, in my own machine (Macbook Pro M1 Pro 16GB RAM), I was able to run the application with multiple PDFs with about 100 pages each. It just took a while to load.
+
 ## Usage Requirements
 
 - An OpenAI API key.
