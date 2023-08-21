@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
@@ -58,7 +58,7 @@ def handle_userinput(user_question):
             st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
 
 def main():
-    load_dotenv() # Load environment variables from .env file (useful for local development)
+    # load_dotenv() # Load environment variables from .env file (useful for local development)
     st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
 
