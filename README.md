@@ -1,4 +1,4 @@
-# Chat PDF | Felix GG
+# Streamlit Chat PDF using Langchain & OpenAI | Felix GG
 
 ## Description
 

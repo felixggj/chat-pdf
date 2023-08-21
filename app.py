@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
@@ -57,9 +58,17 @@ def handle_userinput(user_question):
             st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
 
 def main():
-    load_dotenv()
+    load_dotenv() # Load environment variables from .env file (useful for local development)
     st.set_page_config(page_title="Chat with multiple PDFs", page_icon=":books:")
     st.write(css, unsafe_allow_html=True)
+
+    # Requesting the user to enter their OpenAI API Key
+    openai_key = st.sidebar.text_input("Enter your OpenAI API Key:")
+    if openai_key:
+        os.environ["OPENAI_API_KEY"] = openai_key
+    else:
+        st.sidebar.warning("Please enter your OpenAI API Key to proceed.")
+        st.stop()
 
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
