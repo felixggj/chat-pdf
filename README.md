@@ -1,6 +1,6 @@
 # Chat PDF App using Langchain & OpenAI | Felix GG
 
-**Try it out here:** [Chat PDF](https://share.streamlit.io/felix-gg/chat-pdf/main/app.py)
+**Try it out here:** [Chat PDF](https://chat-pdfs-e2d5fffecdd8.herokuapp.com/)
 
 ## Description
 
