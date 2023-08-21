@@ -15,7 +15,13 @@
 
 ## Important Note
 
-Only documents with not many pages are supported, as the free Heroku plan has a very limited memory. On the other hand, in my own machine (Macbook Pro M1 Pro 16GB RAM), I was able to run the application with multiple PDFs with about 100 pages each. It just took a while to load.
+Only documents with not many pages are supported, as the free Heroku plan has a very limited memory. On the other hand, when running it locally in my own machine (Macbook Pro M1 Pro 16GB RAM), I was able to run the application with multiple PDFs with about 100 pages each. It just took a while to load.
+
+I therefore recommend you to run it locally if you want to use it with multiple PDFs with many pages. For that you'll need to:
+
+- Clone the repository
+- Install the requirements in `requirements.txt` and using the python version specified in `runtime.txt`
+- Run `streamlit run app.py` in your terminal.
 
 ## Usage Requirements
 
