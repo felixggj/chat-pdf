@@ -3,3 +3,4 @@ PyPDF2
 langchain
 openai
 faiss-cpu
+tiktoken

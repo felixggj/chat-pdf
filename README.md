@@ -1,4 +1,6 @@
-# Streamlit Chat PDF using Langchain & OpenAI | Felix GG
+# Chat PDF App using Langchain & OpenAI | Felix GG
+
+**Try it out here:** [Chat PDF](https://share.streamlit.io/felix-gg/chat-pdf/main/app.py)
 
 ## Description
 
@@ -9,6 +11,11 @@
 - Chat interface for multiple PDFs.
 - Integration with OpenAI for context-aware responses.
 - User-friendly interface ensuring smooth interactions.
+- Deployed in Heroku for easy access.
+
+## Usage Requirements
+
+- An OpenAI API key.
 
 ## Potential Changes
 
